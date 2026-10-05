@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Manual · Process Gap Radar · Doc's Diesel (prototype)</title>
+  <link rel="icon" href="assets/monogram-hex.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="side">
+      <div class="brand">
+        <img src="assets/logo-primary.png" alt="Doc's Diesel">
+        <div class="app-name">Shop Manual</div>
+        <div class="descriptor" style="justify-content:flex-start">Process Gap Radar</div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot">
+        <div class="lbl" style="color:var(--gold);font-size:10.5px">Listening to</div>
+        <div class="src"><span class="dot"></span>Slack · 8 channels</div>
+        <div class="src"><span class="dot"></span>Granola · 14 meetings</div>
+        <div style="margin-top:10px;font-size:11px;color:#7d7672">Prototype · mock data only</div>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="mobile-head">
+        <div class="mh-row"><img src="assets/logo-primary.png" alt="Doc's Diesel"><div class="app-name">Shop Manual<small>PROCESS GAP RADAR</small></div><span class="avatar sm">MN</span></div>
+        <nav class="mnav" id="mnav"></nav>
+      </header>
+      <header class="topbar">
+        <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>Search gaps, SOPs, people…</div>
+        <div class="spacer"></div>
+        <span class="lbl muted" style="font-size:11px">Last scan 6 min ago</span>
+        <span class="avatar">MN</span>
+      </header>
+      <main class="content" id="content"></main>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
